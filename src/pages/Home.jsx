@@ -73,21 +73,9 @@ export default function Home() {
             <div className="font-bold text-xl">Dheeraj Madugula</div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-blue-600 py-2">Home</a>
-              <a href="#skills" className="hover:text-blue-600 pxy-2">Skills</a>
+              <a href="#skills" className="hover:text-blue-600 py-2">Skills</a>
               <a href="#projects" className="hover:text-blue-600 py-2">Projects</a>
               <a href="#contact" className="hover:text-blue-600 py-2">Contact</a>
-              {/* <Link 
-                to="/about" 
-                className="relative bg-gradient-to-r from-blue-700 to-purple-600 text-white px-4 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2 group animate-pulse"
-              >
-                <User className="w-4 h-4" />
-                <span>About Me</span>
-                <Sparkles className="w-4 h-4 group-hover:animate-pulse" />
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
-                
-                <div className="absolute inset-0 rounded-full border-2 border-blue-400 animate-ping opacity-30"></div>
-                <div className="absolute inset-0 rounded-full border-2 border-purple-400 animate-ping opacity-20" style={{animationDelay: '.9s'}}></div>
-              </Link> */}
               <Link 
                   to="/about" 
                   className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
@@ -157,19 +145,15 @@ export default function Home() {
                 Hi, I'm <span className="text-blue-600">Dheeraj Madugula</span>
               </h1>
               <p className="text-xl text-slate-700 mb-6">
-                Full-Stack Developer & Technical Architect
-              </p>
-              <p className="text-lg text-slate-600 mb-8">
-                Building scalable web applications with modern technologies
+                Problem Solver Enthusiast / Full-Stack Developer
               </p>
 
-              {/* Code snippet */}
+              {/* Code snippet
               <div className="bg-slate-900 rounded-lg p-4 mb-8 font-mono text-sm">
                 <div className="text-blue-400">const <span className="text-white">developer</span> = <span className="text-green-400">'Dheeraj Madugula'</span>;</div>
                 <div className="text-blue-400">const <span className="text-white">skills</span> = [<span className="text-green-400">'React'</span>, <span className="text-green-400">'Node.js'</span>, <span className="text-green-400">'TypeScript'</span>];</div>
-                <div className="text-blue-400">const <span className="text-white">experience</span> = <span className="text-green-400">'3+ years'</span>;</div>
                 <div className="text-blue-400">const <span className="text-white">passion</span> = <span className="text-green-400">'building amazing apps'</span>;</div>
-              </div>
+              </div> */}
 
               <div className="space-x-4 mb-8">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -182,84 +166,36 @@ export default function Home() {
 
               {/* Social Links */}
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors">
+                <a 
+                  href="https://github.com/dheerajhacks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors"
+                >
                   <Github className="w-5 h-5 text-slate-700" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors">
+
+                <a 
+                  href="https://www.linkedin.com/in/dheeraj-madugula/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors"
+                >
                   <Linkedin className="w-5 h-5 text-slate-700" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors">
+
+                <a 
+                  href="mailto:maduguladheeraj@gmail.com"
+                  className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-slate-300 transition-colors"
+                >
                   <Mail className="w-5 h-5 text-slate-700" />
                 </a>
               </div>
+
             </div>
           </div>
         </div>
       </section>
-      {/* <section id="home" className="pt-16 min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="animate-fade-in">
-              <h1 className="text-4xl md:text-6xl font-bold text-slate-900">
-                Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Dheeraj Madugula</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-slate-700 ">
-                Full-Stack Developer & Technical Architect
-              </p>
-              <p className="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">
-                Building scalable web applications with modern technologies. Passionate about creating efficient, 
-                maintainable solutions that drive business growth.
-              </p>
-              <div className="space-x-4">
-                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white transform hover:scale-105 transition-all duration-200">
-                  <a href="#projects">View My Work</a>
-                </Button>
-                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-200">
-                  <a href="#contact">Get In Touch</a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* About Section */}
-      {/* <section id="about" className="py-20 bg-white/50 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">About Me</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-fade-in">
-              <p className="text-slate-700 text-lg leading-relaxed">
-                I'm a passionate full-stack developer with over 3 years of experience creating innovative web applications. 
-                My journey began with a Computer Science degree, and I've been constantly learning and evolving with the latest technologies.
-              </p>
-              <p className="text-slate-70 text-lg leading-relaxed">
-                I specialize in React, Node.js, and modern web technologies. I love turning complex problems into simple, 
-                beautiful, and intuitive solutions. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects.
-              </p>
-              <div className="flex space-x-4">
-                <Button variant="outline" size="sm" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub
-                </Button>
-                <Button variant="outline" size="sm" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn
-                </Button>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-6xl text-white">👨‍💻</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Skills Section */}
       <section id="skills" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
